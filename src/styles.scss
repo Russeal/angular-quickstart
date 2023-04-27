@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
+.populars {
+  width: 80%;
+  margin-left: 10%;
+  .item {
+    height: 450px;
+    width: 18%;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    img {
+      width: 100%;
+      height: 60%;
+    }
+    .info {
+      padding-left: 15px;
+    }
+    .name {
+      color: #444;
+      font-size: 16px;
+    }
+    .star {
+      color: #666;
+      font-size: 14px;
+      i {
+        font-size: 17px;
+        vertical-align: bottom;
+        color: #F5A522;
+      }
+    }
+    .perMonth {
+      font-size: 12px;
+      span {
+        background-color: yellow;
+      }
+    }
+    &:hover {
+      box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);;
+    }
+  }
+
+}
+
+@media screen and (max-width: 424px) {
+  .populars .item {
+    width: 99%;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 667px) {
+  .populars .item {
+    width: 48%;
+  }
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 900px) {
+  .populars .item {
+    width: 31%;
+  }
+}
+
+
+@media screen and (min-width: 901px) and (max-width: 1226px) {
+  .populars .item {
+      width: 23%;
+  }
+}
+
+@media screen and (max-width: 1226px) {
+  .populars {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

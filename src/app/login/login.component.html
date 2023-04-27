@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="container-block">
+        <div class="links">
+            <a type="btn" (click)="toggleLogIn()" [ngClass]="{'active-link' : !isRegister}">Log in</a>
+            <a type="btn" (click)="toggleLogIn()" [ngClass]="{'active-link' : isRegister}">Register</a>
+        </div>
+
+        <div class="login" *ngIf = "!isRegister">
+            <div class="inputs">
+                <input class="inp" type="text" name="name" id="" placeholder="User Name">
+            </div>
+            <div class="inputs">
+                <input class="inp" type="password" name="name" id="" placeholder="Enter Password">
+            </div>
+
+            <div class="inputCheck">
+                <input type="checkbox"><span> Remember Password</span>
+            </div>
+
+            <div class="lastButton">
+                <button (click)="success()">Log In</button>
+            </div>
+        </div>
+
+
+
+        <div class="register" *ngIf = "isRegister">
+            <div>
+                <input class="inp" type="text" name="name" id="" placeholder="User Name">
+            </div>
+            <div>
+                <input class="inp" type="text" name="name" id="" placeholder="Name">
+            </div>
+            <div>
+                <input class="inp" type="text" name="name" id="" placeholder="Surname">
+            </div>
+            <div>
+                <input class="inp" type="password" name="name" id="" placeholder="Enter Password">
+            </div>
+            <div>
+                <input class="inp" type="password2" name="name" id="" placeholder="Confirm Password">
+            </div>
+
+            <div class="lastButton">
+                <button (click)="success()">Register</button>
+            </div>
+        </div>
+    </div>
+</div>

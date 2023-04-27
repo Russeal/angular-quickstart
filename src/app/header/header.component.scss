@@ -1,0 +1,29 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    input {
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .login {
+        float: left;
+        margin-right: 1rem;
+        padding: 5px 10px;
+        a {
+            text-decoration: unset;
+        }
+        &:hover {
+            background-color: #eee;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            float: left;
+            margin-right: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+}

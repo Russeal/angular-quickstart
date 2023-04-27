@@ -1,0 +1,11 @@
+<div class="product" *ngIf="product">
+    <div class="imagePart">
+        <img src="https://images.uzum.uz/cf9r2b0l08k0o9qiiid0/original.jpg" alt="">
+    </div>
+    <div class="infoPart">
+        <p>{{product.star}} ({{product.purchasedNum}} baho)</p>
+        <h3>{{product.name}}</h3>
+        <p>Narx:</p>
+        <h4>{{ numberWithSpaces(product.price) }}</h4>
+    </div>
+</div>

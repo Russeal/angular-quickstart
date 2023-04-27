@@ -1,0 +1,40 @@
+<section class="carousel" aria-label="Gallery" style="top: 60px">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <img src="https://uzum.uz/product/Mini-Dreams-Cakharnoe-234359" alt="" style="width: 100%">
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+    </li>
+  </ol>
+</section>
+
+
+<h1 style="margin-top: 100px;">Populars:</h1>
+<div class="populars">
+  <div class="item" *ngFor = "let ad of ads" routerLink="product/{{ad.name}}">
+    <img src="{{ad.imageLink}}" alt="">
+    <div class="info">
+      <p class="name">{{ad.name}}</p>
+      <p class="star"><i class="material-icons">star</i> {{ad.star}} ({{ad.purchasedNum}} baho)</p>
+      <p class="perMonth"><span>&nbsp;{{ getPerMonth(ad.price) }} so'm / oyiga&nbsp;</span></p>
+      <p>{{ad.price}} so'm</p>
+    </div>
+  </div>
+</div>

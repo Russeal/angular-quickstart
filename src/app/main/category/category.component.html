@@ -1,0 +1,16 @@
+<h1 style="margin-top: 100px; text-align: center;">{{category}}:</h1>
+<div class="populars">
+    <div *ngFor = "let ad of ads" >
+        <div class="item" routerLink="../../product/{{ad.name}}" *ngIf="ad.category == category">
+            <div>
+                <img src="{{ad.imageLink}}" alt="">
+                <div class="info">
+                    <p class="name">{{ad.name}}</p>
+                    <p class="star"><i class="material-icons">star</i> {{ad.star}} ({{ad.purchasedNum}} baho)</p>
+                    <p class="perMonth"><span>&nbsp;{{ getPerMonth(ad.price) }} so'm / oyiga&nbsp;</span></p>
+                    <p>{{ad.price}} so'm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
